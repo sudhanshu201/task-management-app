@@ -1,38 +1,90 @@
+/* App Container */
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Task List Container */
+.task-list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  min-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Task Card */
+.task-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Task Card Title */
+.task-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Task Card Description */
+.task-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Task Card Status Dropdown */
+.task-card select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Task Card Buttons */
+.task-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  justify-content: space-between;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Task Card Buttons on Hover */
+.task-card button:hover {
+  background-color: #0056b3;
+  
+}
+
+/* Export Button */
+.export-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Export Button on Hover */
+.export-button:hover {
+  background-color: #1a682c;
 }
